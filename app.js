@@ -36,8 +36,11 @@ for (let items of products) {
     document.getElementById("products").appendChild(card);
 }
 
+let count = 0;
+
 const addToCart = () => {
-    
+    count++;
+    document.getElementById('cart-count').innerHTML = count;
 }
 // for (let i of products.data){
 //     let product = JSON.parse(localStorage.product || [])
